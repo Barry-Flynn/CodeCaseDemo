@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>弹性布局 flex</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      header,
+      footer {
+        background-color: rgb(102, 102, 102);
+        color: white;
+      }
+      .left {
+        background-color: rgb(87, 189, 222);
+      }
+      .middle {
+        background-color: rgb(214, 214, 214);
+      }
+      .right {
+        background-color: rgb(255, 90, 15);
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <div class="container">
+      <div class="left">Left</div>
+      <div class="middle">Middle</div>
+      <div class="right">Right</div>
+    </div>
+    <footer>Footer</footer>
+
+    <style>
+      div {
+        height: 200px;
+      }
+      .container {
+        display: flex;
+      }
+      .left {
+        width: 300px;
+      }
+      .middle {
+        flex: 1;
+      }
+      .right {
+        width: 200px;
+      }
+    </style>
+  </body>
+</html>
